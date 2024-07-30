@@ -651,15 +651,8 @@ void Game::playGame()
 	{
 		double chipsLost = player.getChipAmount() - startingChips;
 		cout << "You lost :" << chipsLost << " chips" << endl;
-		if (chipsLost > 0 || chipsLost == 0)
-		{
-			cout << "\n" << "Better luck next time." << endl;
-		}
-		else
-		{
-			cout << "\n" << "Somehow you managed to lose more chips than you had." << endl;
-			cout << "You are dragged to the back alley and 'gently' reminded not to play over your wealth." << endl;
-		}
+		
+		cout << "\n" << "Better luck next time." << endl;
 
 	}
 
